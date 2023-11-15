@@ -1,0 +1,1149 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 22px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .links
+    {
+        padding-right: 20px;
+    }
+
+    header .links > * + *
+    {
+        margin-left: 9px;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 792px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .page_title
+    {
+        font-size: 22px;
+        line-height: calc(100% + 4px);
+    }
+
+
+
+    .page_head .popular_queries,
+    .page_head .links.mob_hide
+    {
+        display: none;
+    }
+
+
+    .page_head .mob_links
+    {
+        display: block;
+    }
+
+
+
+    .page_head .links
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .page_head .links::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .page_head .links::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .page_head .links > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .page_head .links > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    aside .banners
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.no_line
+    {
+        margin-bottom: 29px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 10px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        width: 328px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        padding: 16px 0;
+    }
+
+
+    .advantages .row
+    {
+        margin-left: -40px;
+
+        justify-content: flex-start;
+    }
+
+
+    .advantages .sep
+    {
+        display: none;
+    }
+
+
+    .advantages .item
+    {
+        width: calc(20% - 40px);
+        margin-left: 40px;
+    }
+
+    .advantages .item:before
+    {
+        position: absolute;
+        top: 0;
+        right: 100%;
+
+        display: block;
+
+        width: 1px;
+        height: 100%;
+        max-height: 100%;
+        margin-right: 20px;
+
+        content: '';
+
+        background: linear-gradient(to bottom,  rgba(16, 224, 72,0) 0%,rgba(16, 224, 72,1) 50%,rgba(16, 224, 72,0) 100%);
+    }
+
+    .advantages .item:nth-child(5n+1):before
+    {
+        display: none;
+    }
+
+
+    .advantages .item br
+    {
+        display: none;
+    }
+
+
+    .advantages .item .icon
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .advantages .item .icon + *
+    {
+        max-width: calc(100% - 55px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+    .articles .swiper-button-next,
+    .articles .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .row .data
+    {
+        width: calc(100% - 334px);
+    }
+
+
+    .service_info .row .data > .block_title,
+    .service_info .price_formed .block_title,
+    .service_info .main_advantages .block_title,
+    .service_info .work_technology .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .service_info .question:before
+    {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+    }
+
+
+    .service_info .question .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .service_info .work_stages .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .service_info .image
+    {
+        width: 314px;
+    }
+
+
+
+    /*------------
+        Laying
+    ------------*/
+    .laying .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 8px;
+    }
+
+
+
+    /*------------------------
+        Service order form
+    ------------------------*/
+    .service_order_form .service
+    {
+        width: 100%;
+        height: 230px;
+        margin-bottom: 24px;
+
+        border-radius: 5px;
+    }
+
+
+    .service_order_form .service .thumb,
+    .service_order_form .service .thumb img
+    {
+        border-radius: 5px;
+    }
+
+
+    .service_order_form .service .info
+    {
+        padding: 10px 20px;
+
+        border-radius: 0 0 5px 5px;
+    }
+
+
+    .service_order_form .service .arr
+    {
+        right: 20px;
+    }
+
+
+    .service_order_form .form
+    {
+        width: 100%;
+
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    .service_order_form .form .row > *
+    {
+        width: 308px;
+    }
+
+    .service_order_form .form .row > *.big
+    {
+        width: calc(100% - 646px);
+    }
+
+
+    .service_order_form .form .bg
+    {
+        border-radius: 5px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .block_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .gallery .swiper-slide
+    {
+        width: 404px;
+    }
+
+
+    .gallery .swiper-button-next,
+    .gallery .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .row > *
+    {
+        width: calc(25% - 16px);
+    }
+
+
+
+    /*----------------
+        Brand info
+    ----------------*/
+    .brand_info .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .products .row
+    {
+        --count: 3;
+    }
+
+    .products .row > *
+    {
+        width: calc(33.333% - 16px);
+    }
+
+
+    .products .swiper-slide,
+    .content .products .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+    .products .swiper-button-next,
+    .products .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .sep:nth-child(12)
+    {
+        width: 1px;
+        height: auto;
+
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+    .categories .sep:nth-child(8),
+    .categories .sep:nth-child(16)
+    {
+        width: 100%;
+        height: 1px;
+
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+
+    .categories .category
+    {
+        width: calc(25% - 32px);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .row > .list
+    {
+        width: calc(100% - 355px);
+    }
+
+
+    .reviews .list + .add_review
+    {
+        width: 335px;
+    }
+
+
+
+    /*----------------
+        Add review
+    ----------------*/
+    .add_review .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Payment info
+    ------------------*/
+    .payment_info .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+
+    .payment_info .row > *
+    {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .payment_info .row > *.item
+    {
+        width: calc(33.333% - 34px);
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .code
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .info
+    {
+        width: 100%;
+    }
+
+
+    .delivery_info .image
+    {
+        width: 724px;
+        margin: 24px auto 0;
+        padding-top: 75px;
+    }
+
+
+    .delivery_info .image .text
+    {
+        right: -24px;
+
+        width: 400px;
+        height: 400px;
+        padding: 35px 116px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: calc(100% - 502px);
+        max-width: calc(100% - 502px);
+    }
+
+
+    .contacts_info .data .company
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .contacts_info .data .item .val > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: 482px;
+    }
+
+
+
+    /*------------------
+        Article head
+    ------------------*/
+    .article_head .article_name
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .article_head .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .article_head .image
+    {
+        width: 482px;
+        min-height: 270px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Has question
+    ------------------*/
+    .has_question .form
+    {
+        width: calc(100% - 295px);
+    }
+
+
+
+    /*-------------------
+        Services info
+    -------------------*/
+    .services_info .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    .service_info .service_advantages .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*----------------
+        About data
+    ----------------*/
+    .about_data .image
+    {
+        width: 467px;
+
+        align-self: center;
+    }
+
+
+    .about_data .data
+    {
+        width: calc(100% - 487px);
+    }
+
+
+    .about_data .data .block_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .about_data .data .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------------
+        About advantages
+    ----------------------*/
+    .about_advantages .row
+    {
+        margin-bottom: -32px;
+    }
+
+
+    .about_advantages .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 32px;
+    }
+
+    .about_advantages .row > *:nth-child(5n+1):before
+    {
+        display: block;
+    }
+
+    .about_advantages .row > *:nth-child(3n+1):before
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(100% - 502px);
+    }
+
+
+    .about_info .section .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .about_info .section .items
+    {
+        margin-bottom: -16px;
+    }
+
+    .about_info .section .item
+    {
+        margin-bottom: 16px;
+        padding: 9px 0;
+    }
+
+
+    .about_info .reviews
+    {
+        width: 482px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .swiper-slide
+    {
+        width: 225px;
+    }
+
+
+    .partners .swiper-button-next,
+    .partners .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .partners .item
+    {
+        height: 70px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .titles > *,
+    .cart_info .product > *
+    {
+        width: 200px;
+        min-width: 200px;
+    }
+
+
+    .cart_info .product .name
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    .cart_info .delivery
+    {
+        width: 432px;
+    }
+
+
+    .cart_info .order_info,
+    .cart_info .order_delivery
+    {
+        width: calc(50% - 10px);
+    }
+
+
+
+    /*----------------------
+        Checkout success
+    ----------------------*/
+    .checkout_success .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .col_images
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .product_info .data
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .product_info .features
+    {
+        width: calc(50% - 10px);
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .main_tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 24px;
+        padding: 0;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .product_data .main_tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .product_data .main_tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .product_data .main_tabs .btn,
+    .product_data .main_tabs .btn.big
+    {
+        display: inline-block;
+
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        margin: 0;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        vertical-align: top;
+    }
+
+    .product_data .main_tabs .btn:before
+    {
+        display: none;
+    }
+
+    .product_data .main_tabs .btn:after
+    {
+        bottom: 0;
+    }
+
+    .product_data .main_tabs .btn + .btn
+    {
+        margin-left: -4px;
+    }
+
+
+    .product_data .main_tabs .btn img
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+    }
+
+
+
+    /*------------------
+        Compare info
+    ------------------*/
+    .compare_info .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .compare_info .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .compare_info .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .compare_info .tabs .btn
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .compare_info .tabs .btn + .btn
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        width: 100%;
+    }
+
+
+    footer .contacts .col
+    {
+        display: flex;
+
+        width: calc(50% - 30px);
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .contacts .col + .col
+    {
+        margin-left: auto;
+    }
+
+
+    footer .contacts .col .label
+    {
+        width: 100%;
+    }
+
+
+    footer .contacts .time
+    {
+        width: 100%;
+    }
+
+    footer .contacts .time .icon + *
+    {
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .contacts .time .icon + * > * + *
+    {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+
+    footer .contacts .phone
+    {
+        margin-left: 20px;
+    }
+
+
+    footer .contacts .location,
+    footer .contacts .socials
+    {
+        width: 100%;
+    }
+
+
+    footer .sep.mob_hor
+    {
+        width: 100%;
+        height: 1px;
+        margin: 40px 0;
+
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+
+    footer .links
+    {
+        width: calc(50% - 30px);
+    }
+
+    footer .links .items
+    {
+        column-gap: 60px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

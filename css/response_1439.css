@@ -1,0 +1,278 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .col_left
+    {
+        display: none;
+
+        width: 100%;
+    }
+
+    .col_left.show
+    {
+        display: block;
+    }
+
+
+    .col_main
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    .menu,
+    .menu.open
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: flex;
+
+        width: 100%;
+        height: auto;
+        padding: 6px 0;
+
+        transform: none;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .menu:before
+    {
+        position: absolute;
+        right: 0;
+        left: 0;
+
+        display: block;
+
+        width: 1px;
+        height: calc(100% - 106px);
+        margin: 0 auto;
+
+        content: '';
+        pointer-events: none;
+
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+    .menu:after
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+        content: '';
+        pointer-events: none;
+
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+
+    .menu > *
+    {
+        position: relative;
+
+        width: 50%;
+
+        border: none;
+    }
+
+    .menu > *:nth-child(2n+1):after
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 200%;
+        height: 1px;
+
+        content: '';
+
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+    }
+
+    .menu > *:nth-child(1):before
+    {
+        top: -6px;
+    }
+
+
+    .menu > *:nth-last-child(1)
+    {
+        width: 100%;
+    }
+
+    .menu > *:nth-last-child(1):after
+    {
+        width: 100%;
+    }
+
+
+    .menu > * a
+    {
+        font-family: var(--font_family2);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+
+        display: block;
+
+        padding: 16px 10px;
+
+        text-align: center;
+        white-space: normal;
+        letter-spacing: -.48px;
+    }
+
+
+    .menu > * a .icon
+    {
+        width: 45%;
+        height: 45px;
+        margin: 0 auto 5px;
+    }
+
+
+    .menu > * a span
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+
+    .menu > * a .arr
+    {
+        display: none;
+    }
+
+
+
+    .menu.open *:hover > .sub,
+    .menu.open a.touch_link + .sub.show
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu_btn
+    {
+        width: 93px;
+    }
+
+
+    header .logo
+    {
+        width: auto;
+        height: auto;
+
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        align-self: center;
+    }
+
+    header .logo img
+    {
+        display: none;
+    }
+
+    header .logo img + img
+    {
+        display: block;
+    }
+
+
+    header .messengers
+    {
+        display: none;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 883px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: calc(100% - 644px);
+        max-width: calc(100% - 644px);
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .main_tabs .btn
+    {
+        min-width: 136px;
+    }
+
+    .product_data .main_tabs .btn:last-child
+    {
+        min-width: 172px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products.mods .product .buy_btn,
+    .products.mods .product .quike_buy_btn
+    {
+        font-size: 13px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-left: 0;
+    }
+
+
+    footer .contacts .col + .col
+    {
+        margin-left: 40px;
+    }
+
+
+    footer .links .items
+    {
+        column-gap: 40px;
+    }
+}
