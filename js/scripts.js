@@ -1088,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Кнопка 'Вверх'
-	$('.buttonUp .btn').click((e) => {
+	$('.buttonUp .btn, footer .arr').click((e) => {
 		e.preventDefault()
 
 		$('body, html').stop(false, false).animate({ scrollTop: 0 }, 1000)

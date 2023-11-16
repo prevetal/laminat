@@ -603,13 +603,13 @@
     ------------------*/
     .product_info .col_images
     {
-        width: 440px;
+        width: 33%;
     }
 
 
     .product_info .data
     {
-        width: calc(100% - 805px);
+        width: calc(37% - 40px);
     }
 
 
@@ -621,7 +621,7 @@
 
     .product_info .features
     {
-        width: 325px;
+        width: 30%;
     }
 
 
