@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
-				1280: {
+				1024: {
 					spaceBetween: 20,
 					slidesPerView: 3
 				}

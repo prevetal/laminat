@@ -346,6 +346,14 @@
         order: 2;
     }
 
+    .product_info * + .cheaper_btn
+    {
+        width: 211px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .product_info .cheaper_btn + .callback_btn
     {
         margin-top: 0;
@@ -362,6 +370,13 @@
     {
         padding-right: 10px;
         padding-left: 10px;
+    }
+
+
+    .product_info .share
+    {
+        width: 100%;
+        margin-top: 10px;
     }
 
 
@@ -403,7 +418,7 @@
     -----------*/
     .files
     {
-        padding: 16px 20px;
+        padding: 16px 10px;
     }
 
 
