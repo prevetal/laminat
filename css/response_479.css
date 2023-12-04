@@ -167,12 +167,6 @@
     }
 
 
-    .categories .category
-    {
-        width: calc(50% - 24px);
-    }
-
-
 
     /*--------------------
         Services steps
@@ -291,13 +285,12 @@
     .product_info .buy .col.mob_full_w
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
         width: 100%;
-
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
 
@@ -341,9 +334,9 @@
 
     .product_info .cheaper_btn
     {
-        margin-left: auto;
-
         order: 2;
+
+        margin-left: auto;
     }
 
     .product_info * + .cheaper_btn
@@ -408,7 +401,7 @@
 
         width: 166px;
         height: 166px;
-        padding: 35px 20px;
+        padding: 35px 18px;
     }
 
 
@@ -419,6 +412,60 @@
     .files
     {
         padding: 16px 10px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .cart_total .continue_btn
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .cart_info .cart_total .checkout_btn
+    {
+        width: 100%;
+        margin-top: 10px;
+
+        text-align: center;
+    }
+
+
+
+    .cart_info .quike_order .desc
+    {
+        line-height: 110%;
+
+        width: 164px;
+    }
+
+
+    .cart_info .quike_order .form
+    {
+        margin-top: 8px;
+    }
+
+
+    .cart_info .quike_order .form .line
+    {
+        width: 100%;
+    }
+
+
+    .cart_info .quike_order .form .submit
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cart_info .quike_order .form .submit_btn
+    {
+        width: 100%;
     }
 
 

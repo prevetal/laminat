@@ -85,11 +85,6 @@
         margin-left: 20px;
     }
 
-    header .messengers a + a
-    {
-        margin-left: 0;
-    }
-
 
     header .search
     {
@@ -256,10 +251,10 @@
     ----------------*/
     .categories .row
     {
+        justify-content: center;
+
         margin-bottom: -24px;
         margin-left: -32px;
-
-        justify-content: center;
     }
 
 
@@ -622,6 +617,7 @@
     .product_info .features
     {
         width: 30%;
+        padding-top: 3px;
     }
 
 

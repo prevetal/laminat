@@ -40,6 +40,63 @@
 
 
 
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        display: none !important;
+    }
+
+
+
+    /*----------------------
+        Fixed filter btn
+    ----------------------*/
+    .fixed_filter_btn
+    {
+        display: block;
+    }
+
+
+
+    /*----------------------
+        Fixed messengers
+    ----------------------*/
+    .fixed_messengers
+    {
+        right: 15px;
+        bottom: 15px;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+    .fixed_messengers > * + *
+    {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+
+    .fixed_messengers a.small
+    {
+        width: 41px;
+        height: 41px;
+    }
+
+
+    .fixed_messengers .spoler_btn
+    {
+        display: flex;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -162,9 +219,43 @@
     /*------------
         Filter
     ------------*/
-    .filter
+    aside .filter
     {
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        left: 0;
+
         display: none;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding-top: 65px;
+
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+    aside .filter .mob_head
+    {
+        display: flex;
+    }
+
+
+    aside .filter .form
+    {
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+
+        overscroll-behavior-y: contain;
     }
 
 
@@ -226,9 +317,9 @@
 
     .advantages .row
     {
-        margin-left: -40px;
-
         justify-content: flex-start;
+
+        margin-left: -40px;
     }
 
 
@@ -293,6 +384,12 @@
     .articles .row > *
     {
         width: calc(50% - 16px);
+    }
+
+
+    .articles .mob_slider .swiper-slide
+    {
+        width: 330px;
     }
 
 
@@ -727,9 +824,9 @@
     ----------------*/
     .about_data .image
     {
-        width: 467px;
-
         align-self: center;
+
+        width: 467px;
     }
 
 
@@ -919,6 +1016,12 @@
     }
 
 
+    .product_info .payment_delivery .item .desc
+    {
+        margin-top: 16px;
+    }
+
+
 
     /*------------------
         Product data
@@ -1058,13 +1161,12 @@
     footer .contacts .col
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: calc(50% - 30px);
-
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
     footer .contacts .col + .col
@@ -1087,16 +1189,14 @@
     footer .contacts .time .icon + *
     {
         display: flex;
-
-        justify-content: flex-start;
-        align-items: center;
         align-content: center;
+        align-items: center;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     footer .contacts .time .icon + * > * + *
     {
-        margin-top: 0;
         margin-left: 10px;
     }
 

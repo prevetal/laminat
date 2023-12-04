@@ -35,17 +35,16 @@
         left: 0;
 
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 100%;
         height: auto;
         padding: 6px 0;
 
         transform: none;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     .menu:before
@@ -185,14 +184,14 @@
 
     header .logo
     {
+        align-self: center;
+
         width: auto;
         height: auto;
 
         border: none;
         border-radius: 0;
         box-shadow: none;
-
-        align-self: center;
     }
 
     header .logo img
